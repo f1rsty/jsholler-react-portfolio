@@ -9,8 +9,6 @@ import Certifications from './pages/certifications/certifications';
 function App() {
   return (
     <div className="App">
-      <Navbar />
-
       <Router>
 
         <Switch>

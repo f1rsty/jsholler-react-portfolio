@@ -2,27 +2,14 @@ import React from 'react'
 
 import './navbar.css'
 
-function navbar() {
+function Navbar(props) {
     return (
-        <div>
-            <nav role="navigation">
-                <div id="menuToggle">
-                    <input type="checkbox" />
-                    <span></span>
-                    <span></span>
-                    <span></span>
-
-                    <ul id="menu">
-                        <a href="/"><li>Home</li></a>
-                        <a href="#"><li>About</li></a>
-                        <a href="#"><li>Info</li></a>
-                        <a href="#"><li>Contact</li></a>
-                        <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        <nav className="navbar">
+            <ul className="navbar-nav">{ props.children }</ul>
+        </nav>
     )
 }
 
-export default navbar
+
+
+export default Navbar
